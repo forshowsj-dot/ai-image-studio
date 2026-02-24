@@ -13,3 +13,32 @@
   <script src="script.js"></script>
 </body>
 </html>
+<h2>AI Fashion Studio</h2>
+
+<!-- Upload original image -->
+<label>Upload your image:</label>
+<input type="file" id="sourceImage" accept="image/*">
+
+<!-- Text prompt -->
+<textarea id="prompt" placeholder="Describe modifications..."></textarea>
+
+<!-- Dress Category -->
+<select id="dressCategory">
+  <option value="summer dress">Summer Dress</option>
+  <option value="evening gown">Evening Gown</option>
+  <option value="casual outfit">Casual Outfit</option>
+  <option value="party wear">Party Wear</option>
+</select>
+
+<!-- Style Options -->
+<select id="styleSelect">
+  <option value="realistic">Realistic</option>
+  <option value="cartoon">Cartoon</option>
+  <option value="3d">3D</option>
+</select>
+
+<!-- Generate Button -->
+<button onclick="generateImage()">Generate</button>
+
+<!-- Result -->
+<div id="result"></div>
